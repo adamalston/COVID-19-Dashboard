@@ -7,9 +7,10 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/assets/images`,
-      },
+        path: `${__dirname}/src/assets/images`
+      }
     },
-    'gatsby-plugin-react-leaflet',
+    'gatsby-plugin-react-leaflet'
   ],
+  pathPrefix: '/COVID-19-Dashboard-Map'
 };
