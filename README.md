@@ -1,4 +1,4 @@
-# 🦠 COVID-19 Dashboard & Map &middot; [![COVID-19-Dashboard-Map](https://circleci.com/gh/adamalston/COVID-19-Dashboard-Map.svg?style=shield)](https://app.circleci.com/pipelines/github/adamalston/COVID-19-Dashboard-Map) [![Website](https://img.shields.io/website?down_message=down&label=gh-pages&up_message=online&url=https%3A%2F%2Fadamalston.github.io%2FCOVID-19-Dashboard-Map)](https://adamalston.github.io/COVID-19-Dashboard-Map/)
+# 🦠 COVID-19 Dashboard &middot; [![COVID-19-Dashboard](https://circleci.com/gh/adamalston/COVID-19-Dashboard.svg?style=shield)](https://app.circleci.com/pipelines/github/adamalston/COVID-19-Dashboard) [![Website](https://img.shields.io/website?down_message=down&label=gh-pages&up_message=passing&url=https%3A%2F%2Fadamalston.github.io%2FCOVID-19-Dashboard)](https://adamalston.github.io/COVID-19-Dashboard/)
 
 COVID-19 dashboard and map built with [Gatsby](https://www.gatsbyjs.org/) and [React Leaflet](https://react-leaflet.js.org).
 

@@ -12,5 +12,5 @@ module.exports = {
     },
     'gatsby-plugin-react-leaflet'
   ],
-  pathPrefix: '/COVID-19-Dashboard-Map'
+  pathPrefix: '/COVID-19-Dashboard'
 };
