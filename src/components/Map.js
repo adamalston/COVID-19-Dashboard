@@ -18,7 +18,7 @@ const Map = ( props ) => {
   });
 
   const services = useMapServices({
-    names: ['OpenStreetMap']
+    names: ['Mapbox']
   });
 
   const basemap = services.find(( service ) => service.name === defaultBaseMap );
