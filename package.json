@@ -1,10 +1,11 @@
 {
   "name": "coviddashboard",
   "description": "COVID-19 Dashboard",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Adam Alston",
   "dependencies": {
     "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.21.33",
     "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-react-leaflet": "2.0.13",
@@ -46,7 +47,7 @@
   "scripts": {
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -m 'Updates [skip ci]'",
     "develop": "gatsby develop",
     "format": "prettier-eslint --eslint-config-path ./config/eslint.config.js --write $PWD'**/*.js'",
     "lint": "eslint -c ./config/eslint.config.js . --ext .js",
