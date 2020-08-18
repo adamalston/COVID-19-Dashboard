@@ -68,7 +68,4 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-# Cypress
-cypress
-tests/screenshots
-tests/videos
+package-lock.json
