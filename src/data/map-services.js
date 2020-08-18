@@ -1,3 +1,5 @@
+const accessToken = process.env.GATSBY_MAPBOX_KEY;
+
 export const mapServices = [
   {
     name: 'OpenStreetMap',
@@ -5,9 +7,9 @@ export const mapServices = [
     url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
   },
   {
-    name: 'AlidadeSmoothDark',
+    name: 'Mapbox',
     attribution:
-      '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
-    url: 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{s}.png'
+      'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    url: `https://api.mapbox.com/styles/v1/adamalston/ckdzcawm40b7919lo2k1qu91c/tiles/256/{z}/{x}/{y}@2x?access_token=${accessToken}`
   }
 ];
