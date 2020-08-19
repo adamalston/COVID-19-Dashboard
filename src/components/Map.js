@@ -6,7 +6,7 @@ import { useConfigureLeaflet, useMapServices, useRefEffect } from 'hooks';
 import { isDomAvailable } from 'lib/util';
 
 const Map = ( props ) => {
-  const { children, className, defaultBaseMap = 'OpenStreetMap', mapEffect, ...rest } = props;
+  const { children, className, defaultBaseMap = 'Mapbox', mapEffect, ...rest } = props;
 
   const mapRef = useRef();
 
