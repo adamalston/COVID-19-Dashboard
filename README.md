@@ -1,6 +1,6 @@
-# 🦠 COVID-19 Dashboard &middot; [![COVID-19-Dashboard](https://circleci.com/gh/adamalston/COVID-19-Dashboard.svg?style=shield)](https://app.circleci.com/pipelines/github/adamalston/COVID-19-Dashboard) [![Website](https://img.shields.io/website?down_message=down&label=gh-pages&up_message=passing&url=https%3A%2F%2Fadamalston.github.io%2FCOVID-19-Dashboard)](https://adamalston.github.io/COVID-19-Dashboard/)
+# 🦠 COVID-19 Dashboard &middot; [![Circle CI](https://circleci.com/gh/adamalston/COVID-19-Dashboard.svg?style=shield)](https://app.circleci.com/pipelines/github/adamalston/COVID-19-Dashboard) [![Dashboard](https://img.shields.io/website?down_message=down&label=gh-pages&up_message=passing&url=https%3A%2F%2Fadamalston.github.io%2FCOVID-19-Dashboard)](https://adamalston.github.io/COVID-19-Dashboard/)
 
-COVID-19 dashboard and map built with [Gatsby](https://www.gatsbyjs.org/) and [React Leaflet](https://react-leaflet.js.org).
+COVID-19 dashboard and map built with [Gatsby](https://www.gatsbyjs.org/), [React Leaflet](https://react-leaflet.js.org), and [Mapbox](https://www.mapbox.com/).
 
 ![COVID Map](src/assets/images/preview.png)
 
@@ -15,7 +15,3 @@ The data sources for this project are [JHU CSSE COVID-19 Data](https://github.co
 -   World Health Organization (WHO): https://www.who.int/
 -   US CDC: https://www.cdc.gov/coronavirus/2019-ncov/index.html
 -   European Centre for Disease Prevention and Control (ECDC): https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases
-
----
-
-Includes contributions from Colby Fayock

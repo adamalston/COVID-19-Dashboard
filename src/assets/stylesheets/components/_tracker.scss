@@ -7,8 +7,9 @@
 
 .tracker-stats {
     color: $grey-100;
-    background-color: $grey-900;
-    border-top: solid 1px darken($blue-grey-900, 5);
+    background-color: $dark-grey;
+    border-left: solid 1px darken($light-grey, 5);
+    border-top: solid 1px darken($light-grey, 5);
 
     ul {
         display: grid;
@@ -23,8 +24,8 @@
     font-size: 2em;
     text-align: center;
     padding: 0.5em;
-    border-right: solid 1px darken($blue-grey-900, 5);
-    border-bottom: solid 1px darken($blue-grey-900, 5);
+    border-right: solid 1px darken($light-grey, 5);
+    border-bottom: solid 1px darken($light-grey, 5);
 
     strong {
         font-weight: normal;
@@ -53,7 +54,10 @@
 
 .tracker-last-updated {
     color: white;
-    background-color: $grey-900;
+    background-color: $dark-grey;
+    border-left: solid 1px darken($light-grey, 5);
+    border-right: solid 1px darken($light-grey, 5);
+    border-bottom: solid 1px darken($light-grey, 5);
     padding: 0.8em 0;
 
     p {
