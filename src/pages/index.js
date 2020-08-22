@@ -149,7 +149,7 @@ const IndexPage = () => {
                             <li><strong>Confirmed:</strong> ${formatNum( cases )}</li>
                             <li><strong>Deaths:</strong> ${formatNum( deaths )}</li>
                             <li><strong>Recovered:</strong> ${formatNum( recovered )}</li>
-                            <li><strong>Last Update:</strong> ${updatedFormatted}</li>
+                            <!-- <li><strong>Last Update:</strong> ${updatedFormatted}</li> -->
                         </ul>
                         </span>
                         ${casesString}
