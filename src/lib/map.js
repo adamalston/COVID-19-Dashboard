@@ -1,8 +1,3 @@
-/**
- * promiseToFlyTo
- * @description
- */
-
 export function promiseToFlyTo( map, { zoom, center }) {
   return new Promise(( resolve, reject ) => {
     const baseError = 'Failed to fly to area';
@@ -27,11 +22,6 @@ export function promiseToFlyTo( map, { zoom, center }) {
     });
   });
 }
-
-/**
- * getCurrentLocation
- * @description
- */
 
 export function getCurrentLocation() {
   return new Promise(( resolve, reject ) => {
