@@ -7,11 +7,3 @@
 export function isDomAvailable() {
   return typeof window !== 'undefined' && !!window.document && !!window.document.createElement;
 }
-export function formatNum( value ) {
-  return value.toLocaleString( 'en-US' );
-}
-
-export function formatDate( value ) {
-  const date = new Date( value );
-  return date.toLocaleString( 'en-US' );
-}
