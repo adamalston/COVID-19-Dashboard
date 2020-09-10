@@ -1,7 +1,4 @@
-@import "settings/__settings";
-@import "util/__util";
-@import "components/__components";
-@import "pages/__pages";
+@import "settings/__settings", "util/__util", "components/__components", "pages/__pages";
 
 * {
   box-sizing: border-box;
