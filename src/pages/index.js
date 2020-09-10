@@ -1,13 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import L from 'leaflet';
-
 import { useTracker } from 'hooks';
-import { formatNum, formatDate } from 'lib/util';
-
-import Layout from 'components/Layout';
-// import Container from 'components/Container';
-import Map from 'components/Map';
+import { Layout, Map } from 'components';
 
 const LOCATION = {
   lat: 0,
@@ -31,61 +26,61 @@ const IndexPage = () => {
     {
       primary: {
         label: 'Total Cases',
-        value: stats ? formatNum( stats?.cases ) : '-'
+        value: stats ? stats?.cases.toLocaleString( 'en-US' ) : '-'
       },
       secondary: {
         label: 'Per 1 Million',
-        value: stats ? formatNum( stats?.casesPerOneMillion ) : '-'
+        value: stats ? stats?.casesPerOneMillion.toLocaleString( 'en-US' ) : '-'
       }
     },
     {
       primary: {
         label: 'Total Deaths',
-        value: stats ? formatNum( stats?.deaths ) : '-'
+        value: stats ? stats?.deaths.toLocaleString( 'en-US' ) : '-'
       },
       secondary: {
         label: 'Per 1 Million',
-        value: stats ? formatNum( stats?.deathsPerOneMillion ) : '-'
+        value: stats ? stats?.deathsPerOneMillion.toLocaleString( 'en-US' ) : '-'
       }
     },
     {
       primary: {
         label: 'Total Tests',
-        value: stats ? formatNum( stats?.tests ) : '-'
+        value: stats ? stats?.tests.toLocaleString( 'en-US' ) : '-'
       },
       secondary: {
         label: 'Per 1 Million',
-        value: stats ? formatNum( stats?.testsPerOneMillion ) : '-'
+        value: stats ? stats?.testsPerOneMillion.toLocaleString( 'en-US' ) : '-'
       }
     },
     {
       primary: {
         label: 'Active Cases',
-        value: stats ? formatNum( stats?.active ) : '-'
+        value: stats ? stats?.active.toLocaleString( 'en-US' ) : '-'
       }
       // secondary: {
       //     label: 'Per 1 Million',
-      //     value: stats ? formatNum(stats?.activePerOneMillion) : '-',
+      //     value: stats ? stats?.activePerOneMillion.toLocaleString( 'en-US' ) : '-',
       // },
     },
     {
       primary: {
         label: 'Critical Cases',
-        value: stats ? formatNum( stats?.critical ) : '-'
+        value: stats ? stats?.critical.toLocaleString( 'en-US' ) : '-'
       }
       // secondary: {
       //     label: 'Per 1 Million',
-      //     value: stats ? formatNum(stats?.criticalPerOneMillion) : '-',
+      //     value: stats ? stats?.criticalPerOneMillion.toLocaleString( 'en-US' ) : '-',
       // },
     },
     {
       primary: {
         label: 'Recovered Cases',
-        value: stats ? formatNum( stats?.recovered ) : '-'
+        value: stats ? stats?.recovered.toLocaleString( 'en-US' ) : '-'
       }
       // secondary: {
       //     label: 'Per 1 Million',
-      //     value: stats ? formatNum(stats?.recoveredPerOneMillion) : '-',
+      //     value: stats ? stats?.recoveredPerOneMillion.toLocaleString( 'en-US' ) : '-',
       // },
     }
   ];
@@ -146,10 +141,10 @@ const IndexPage = () => {
                         <span class="icon-marker-tooltip">
                         <h2>${country}</h2>
                         <ul>
-                            <li><strong>Confirmed:</strong> ${formatNum( cases )}</li>
-                            <li><strong>Deaths:</strong> ${formatNum( deaths )}</li>
-                            <li><strong>Recovered:</strong> ${formatNum( recovered )}</li>
-                            <li><strong>Last Update:</strong> ${updatedFormatted}</li>
+                            <li><strong>Confirmed:</strong> ${cases.toLocaleString( 'en-US' )}</li>
+                            <li><strong>Deaths:</strong> ${deaths.toLocaleString( 'en-US' )}</li>
+                            <li><strong>Recovered:</strong> ${recovered.toLocaleString( 'en-US' )}</li>
+                            <!-- <li><strong>Last Update:</strong> ${updatedFormatted}</li> -->
                         </ul>
                         </span>
                         ${casesString}
@@ -207,7 +202,7 @@ const IndexPage = () => {
           </ul>
         </div>
         <div className="tracker-last-updated">
-          <p>Last Updated: { stats ? formatDate( stats?.updated ) : '-' }</p>
+          <p>Last Updated: { stats ? new Date( stats?.updated ).toLocaleString( 'en-us' ) : '-' }</p>
         </div>
       </div>
     </Layout>
