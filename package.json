@@ -4,7 +4,7 @@
   "version": "1.1.0",
   "author": "Adam Alston",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "gatsby": "^2.21.33",
     "gatsby-plugin-react-helmet": "^3.3.1",
